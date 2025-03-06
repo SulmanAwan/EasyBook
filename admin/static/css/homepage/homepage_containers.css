@@ -1,0 +1,104 @@
+/* ENTIRE HOMEPAGE CONTAINER*/
+.homepage-container{
+    display:flex;
+    margin-bottom: 2vh;
+    height: auto;
+    border: 5px solid black;
+    gap: 3vh;
+}
+
+.title-action-container{
+    display: flex;
+}
+
+/* BIG CONTAINER #1 */
+/* This is the big container with the calendar and action buttons */
+.calendar-button-container{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    width: 80vh;
+    height: auto;
+    margin-left: 10vh;
+}
+
+/* This is the container with the admin buttons */
+.admin-buttons-container {
+    border: 5px solid black;
+    width: 100%; 
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+/* This is the container with the calendar */
+.admin-calendar-container {
+    border: 5px solid black;
+    width: 100%; 
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+/* BIG CONTAINER #2 */
+/* This container holds the date_label, shift_label, shift_info, bookings_label, booking_info containers*/
+.info-container{
+    display: flex;
+    border: 5px solid black;
+    width: 80vh;
+    height: auto;
+    flex-direction: column;
+}
+
+.date-label-container{
+    display: flex;
+    border: 5px solid black;
+    width: 100%;
+    height: 5vh;
+    margin-top: 3vh;
+}
+
+.shift-label-container{
+    display: flex;
+    border: 5px solid black;
+    width: 100%;
+    height: 5vh;
+    margin-top: 3vh;
+}
+
+.shift-employees-container{
+    display: flex;
+    border: 5px solid black;
+    width: 100%;
+    min-height: 20vh;
+    height: auto;
+    margin-top: 3vh;
+}
+
+.bookings-label-container{
+    display: flex;
+    border: 5px solid black;
+    width: 100%;
+    height: 5vh;
+    margin-top: 3vh;
+}
+
+.bookings-container{
+    display: flex;
+    border: 5px solid black;
+    width: 100%;
+    min-height: 34vh;
+    height: auto;
+    margin-top: 3vh;
+}
+
+/* NOTE: REMEMBER MAKE THE FLEXBOXES WITH DYNAMIC CONTENT HAVE AUTO HEIGHT*/
