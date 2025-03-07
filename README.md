@@ -1,1 +1,1 @@
-# EasyBook
+# EasyBook.
