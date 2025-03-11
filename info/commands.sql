@@ -77,7 +77,7 @@ CREATE TABLE bookings (
     type_id INT NOT NULL,
     transaction_id INT NOT NULL UNIQUE,
     slot_id INT NOT NULL,
-    appointment_status ENUM('current', 'past') NOT NULL,
+    appointment_status ENUM('current', 'past', 'cancel') NOT NULL,
     FOREIGN KEY (customer_id) REFERENCES users(user_id),
     FOREIGN KEY (type_id) REFERENCES booking_types(type_id),
     FOREIGN KEY (transaction_id) REFERENCES payment_transactions(transaction_id),
@@ -104,3 +104,4 @@ CREATE TABLE notifications (
     notification_type ENUM('reminder', 'appointment_canceled') NOT NULL,
     FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
+
